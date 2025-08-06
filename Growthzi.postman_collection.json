@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "b7d9b3f2-c68a-43a5-be2b-450e30b5b0b3",
+		"name": "Growthzi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33901687"
+	},
+	"item": [
+		{
+			"name": "Language",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": \"My name is Manoj Kumar\",\n  \"target_lang\": \"te\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/translate"
+			},
+			"response": []
+		},
+		{
+			"name": "Currency",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"BasePrice\": 10,\"Currency\": \"USD\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/currency"
+			},
+			"response": []
+		},
+		{
+			"name": "Resume",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/manojkumar/Downloads/ManojKumar-Resume.pdf"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:5000/resume"
+			},
+			"response": []
+		}
+	]
+}
