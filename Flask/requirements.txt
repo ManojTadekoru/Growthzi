@@ -4,3 +4,7 @@ pdfplumber==0.10.2
 PyPDF2==3.0.1
 requests==2.31.0
 deep-translator
+gunicorn==22.0.0
+PYMuPDF
+docx2txt
+flask-cors
